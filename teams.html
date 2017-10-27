@@ -2,38 +2,78 @@
 <html>
 <head>
 <style>
-  .header,footer {
-     width:100%;
-     height: 75px;
-     background-color: maroon;
-     text-align: center;
-     color: white;
-     font-family: sans-serif;
-  }
-  
-   .article {
-     background-color: teal;
-     color: white;
-     margin: 20px 0 20px 0;
-     padding: 20px;
-     font-family: sans-serif;
-  }
-     img { 
-      width:200px;
-      height:150px:
-  } 
-  
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.article {
+  border:3px solid black;
+    padding:5px;
+}
+ img {
+  width: 200px;
+  height: 150px;
+
 </style>
 </head>
-
 <body>
-  <div class="header">
-   <h1>Enver Creek Teams</h1>
+
+<div class="header">
+  <h1>Enver Creek</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>Soccer</li>
+      <li>Basketball</li>
+      <li>Volleyball</li>
+    </ul>
   </div>
-  
+
+  <div class="column content">
+    <h1>Sport Teams</h1>
+    <p>Enver Creek has sport teams open for all grades. They provide an apportunity for the students to come out and enjoy the sport they love including on working and building on their skills.</p>
+  </div>
+</div>
+
   <div class="article">
     <h1>Soccer</h1>
     <p>Enver Creek's soccer team is a great oppportunity to engage students in friendly games against other schools.</p>
+    <img src="http://hdch.org/wp-content/uploads/2017/05/soccer_generic.jpg">
   </div>
   
   <div class="article">
@@ -46,14 +86,10 @@
     <p>The has a strong volleyball which has been built up by the great coches and the students sportmanship. Enver Creek has provided this opportunity for their students.</p>
   </div>
   
-  <div class="footer">
-    <h2>Contact us (604)-543-8149</h2>
-  </div>
-  
-  
-  
-  
 
-
+<div class="footer">
+  <p>Footer Text</p>
+</div>
 
 </body>
+</html>
