@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.more {
+    float: right;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: teal;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+img {
+    width: 200px;
+    height: 150px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Enver Creek Secondary</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>Home Page</li>
+      <li>Teams</li>
+      <li>Departments</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <h1>Welcome</h1>
+    <img src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images/114.jpg">
+    <p>Enver Creek Secondary is one of the best schools in Surrey, BC.We provide opportunities for success and excellence as we prepare students to become responsible members of the community.</p>
+  </div>
+
+  <div class="column content more">
+    <h1>Soccer</h1>
+    <img src="http://hdch.org/wp-content/uploads/2017/05/soccer_generic.jpg">
+    <p>Enver Creek's soccer team is a great oppportunity to engage students in friendly games against other schools.</p>
+  </div>
+
+<div class="column content more">
+    <h1>Basketball</h1>
+    <img src="http://p10cdn4static.sharpschool.com/UserFiles/Servers/Server_418484/Image/Ball_Through_Hoop_Web.jpg">
+    <p>Enver Creek has a great basketball teams open for all gardes, to encourage students to come out and show their skills and also add on to their skills.</p>
+  </div>
+
+<div class="column content more">
+    <h1>Volleyball</h1>
+    <img src="http://cdn.cnn.com/cnnnext/dam/assets/160807004251-beach-volleyball-super-169.jpg">
+    <p>The has a strong volleyball which has been built up by the great coches and the students sportmanship. Enver Creek has provided this opportunity for their students.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>14505-84 Avenue</p>
+  <p>Surrey, B.C. Canada</p>
+  <p>V3S 8X2</p>
+  <p>Contact us:</p>
+  <p>Phone: 604-543-8149</p>
+  <p>Fax: 604-543-9762</p>
+</div>
+
+</body>
+</html>
