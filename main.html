@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: teal;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+</style>
+</head>
+<body>
 
+<div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>The Flight</li>
+      <li>The City</li>
+      <li>The Island</li>
+      <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <img src="https://www.surreyschools.ca/schools/envercreek/Style%20Library/Images/114.jpg">
+    <h1>Welcome</h1>
+    <p>Enver Creek Secondary is one of the best schools in Surrey, BC.We provide opportunities for success and excellence as we prepare students to become responsible members of the community.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>14505-84 Avenue</p>
+  <p>Surrey, B.C. Canada</p>
+  <p>V3S 8X2</p>
+  <p>Contact us:</p>
+  <p>Phone: 604-543-8149</p>
+  <p>Fax: 604-543-9762</p>
+</div>
+
+</body>
+</html>
