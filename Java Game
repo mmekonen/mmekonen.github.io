@@ -1,0 +1,26 @@
+function getUserChoice
+var userInput = prompt("What is your name?");
+userInput = userInput.toLowerCase();
+
+if (userInput === "rock") {
+  return = userInput;
+} else if (userInput === "paper") {
+  return = userInput;
+} else if (userInput === "scissors") {
+  return = userInput;
+}
+
+document.write("Error");
+
+function getComputerchoice() {
+  Math.floor(Math.random() * 2)
+  if (getComputerChoice === 0) {
+    return = "rock";
+  } else if (getComputerchoice === 1) {
+    return = "paper";
+  } else if (getComputerchoice === 2) {
+    return = "scissors";
+  }
+}
+
+function determineWinner
