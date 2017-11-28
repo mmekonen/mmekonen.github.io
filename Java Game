@@ -16,11 +16,18 @@ function getComputerchoice() {
   Math.floor(Math.random() * 2)
   if (getComputerChoice === 0) {
     return = "rock";
-  } else if (getComputerchoice === 1) {
+  } else if (getComputerChoice === 1) {
     return = "paper";
-  } else if (getComputerchoice === 2) {
+  } else if (getComputerChoice === 2) {
     return = "scissors";
   }
 }
 
-function determineWinner
+function determineWinner(userInput, getComputerChoice) {
+  if (userInput === getComputerChoice) {
+    return = "tie";
+  } else if (userInput === "rock", getComputerChoice === "scissors") {
+    return = "user won";
+  } else if (getComputerChoice === "paper") {
+    return = "Computer won";
+  }
