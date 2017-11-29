@@ -1,33 +1,67 @@
-function getUserChoice
-var userInput = prompt("What is your name?");
-userInput = userInput.toLowerCase();
-
-if (userInput === "rock") {
-  return = userInput;
-} else if (userInput === "paper") {
-  return = userInput;
-} else if (userInput === "scissors") {
-  return = userInput;
+function getUserChoice() {
+  var userInput = prompt("Enter rock, paper, or scissors to play!");
+  userInput = userInput.toLowerCase();
+  if (userInput === "rock" || userInput === "paper" || userInput === "scissors") {
+    return userInput;
+  } else {
+    document.write("Error! Please enter a correct value!");
+  }
 }
-
-document.write("Error");
 
 function getComputerchoice() {
-  Math.floor(Math.random() * 2)
-  if (getComputerChoice === 0) {
-    return = "rock";
-  } else if (getComputerChoice === 1) {
-    return = "paper";
-  } else if (getComputerChoice === 2) {
-    return = "scissors";
+  var randomNumber = Math.floor(Math.random() * 3);
+  switch (randomNumber) {
+    case 0:
+      return "rock";
+    case 1:
+      return "paper";
+    default:
+      return "scissors";
   }
 }
 
-function determineWinner(userInput, getComputerChoice) {
-  if (userInput === getComputerChoice) {
-    return = "tie";
-  } else if (userInput === "rock", getComputerChoice === "scissors") {
-    return = "user won";
-  } else if (getComputerChoice === "paper") {
-    return = "Computer won";
+function determineWinner(userChoice, computerChoice) {
+  if (userChoice === computerChoice) {
+    return "The game is a tie!";
   }
+  if (userChoice === "rock") {
+    if (computerChoice === "scissors") {
+      return "You win!";
+    } else {
+      return "You lose!";
+    }
+  }
+  if (userChoice === "paper") {
+    if (computerChoice === "rock") {
+      return "You win!";
+    } else {
+      return "You lose!";
+    }
+  }
+  if (userChoice === "scissors") {
+    if (computerChoice === "paper") {
+      return "You win!";
+    } else {
+      return "You lose!";
+    }
+  }
+  }
+  
+  function playGame() {
+  var userChoice = getUserChoice();
+  var computerChoice = getComputerChoice();
+  
+  document.write(userChoice);
+ 
+  
+  document.write(determineWinner(userChoice, computerChoice));
+  
+  }
+  
+  if (userChoice === 'bomb') {
+    return '  ';
+  }
+}
+
+
+playGame();
