@@ -47,25 +47,28 @@ function determineWinner(userChoice, computerChoice) {
   }
 }
 
-if (userChoice === "bomb") {
-  return "You win!";
-}
+  if (userChoice === "bomb") {
+    return "You win!";
+  }
+ }
+
+  if (userChoice === "lizard") {
+    if (userChoice === "spock" || computerChoice === "rock")
+      return = "You win!";
+    } else {
+      return = "Computer win";
+    }
+  }
 }
 
-if(userChoice === "lizard") {
-  if(userChoice === "spock" || computerChoice === "rock")
-    return = "You win!";
-} else {
-    return = "Computer win";
+  if (userChoice === "spock") {
+    if (userChoice === "rock" || comupterChoice === "paper")
+      return = "You win!";
+    } else {
+      return = "Computer win!";
+    }
+  }
 }
-
-if(userChoice === "spock") {
-  if(userChoice === "rock" || comupterChoice === "paper")
-    return = "You win!";
-} else {
-    return = "Computer win!";
-}
-
 
 function playGame() {
   var userChoice = getUserChoice();
