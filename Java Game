@@ -71,16 +71,15 @@
   }
   }
 
-  function playGame() {
+function playGame() {
     var userChoice = getUserChoice();
     var computerChoice = getComputerChoice();
-
-    document.write(userChoice);
-
-    document.write(determineWinner(userChoice, computerChoice));
-
+    document.write("User choice: " + userChoice);
+    document.write("<br>");
+    document.write("Computer's choice: " + computerChoice);
+    document.write("<br>");
+    document.write("The result: " + determineWinner(userChoice, computerChoice));
   }
-
 
   playGame();
 
