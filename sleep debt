@@ -1,0 +1,4 @@
+function getSleepHours(day){
+  var hours = prompt("How many hours of sleep did you get each night this week/day?");
+   return
+}
