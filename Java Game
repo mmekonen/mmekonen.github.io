@@ -1,84 +1,87 @@
-function getUserChoice() {
-  var userInput = prompt("Enter rock, paper, or scissors to play!");
-  userInput = userInput.toLowerCase();
-  if (userInput === "rock" || userInput === "paper" || userInput === "scissors") {
-    return userInput;
-  } else {
-    document.write("Error! Please enter a correct value!");
+<script>
+  function getUserChoice() {
+    var userInput = prompt("Enter rock, paper, scissors, lizard, spock or bomb to play?");
+    userInput = userInput.toLowerCase();
+    if (userInput === "rock" || userInput === "paper" || userInput === "scissors" || userInput === "lizard" || userInput === "spock" || userInput === "bomb") {
+      return userInput;
+    } else {
+      document.write("Error! Please enter a correct value!");
+    }
   }
-}
 
-function getComputerChoice() {
-  var randomNumber = Math.floor(Math.random() * 3);
-  switch (randomNumber) {
-    case 0:
-      return "rock";
-    case 1:
-      return "paper";
-    default:
-      return "scissors";
+  function getComputerChoice() {
+    var randomNumber = Math.floor(Math.random() * 6);
+    switch (randomNumber) {
+      case 0:
+        return "rock";
+      case 1:
+        return "paper";
+      case 2:
+        return "scissors";
+      case 3:
+        return "lizard";
+      case 4:
+        return "spock";
+      case 5:
+        return "bomb";
+    }
   }
-}
 
-function determineWinner(userChoice, computerChoice) {
-  if (userChoice === computerChoice) {
-    return "The game is a tie!";
-  }
-  if (userChoice === "rock") {
-    if (computerChoice === "scissors") {
-      return "You win!";
+  function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+      return "The game is a tie!";
+    }
+    if (userChoice === "rock") {
+      if (computerChoice === "scissors") {
+        return "You win!";
+      } else {
+        return "You lose!";
+      }
+    }
+    if (userChoice === "paper") {
+      if (computerChoice === "rock") {
+        return "You win!";
+      } else {
+        return "You lose!";
+      }
+    }
+    if (userChoice === "scissors") {
+      if (computerChoice === "paper") {
+        return "You win!";
+      } else {
+        return "You lose!";
+      }
+    }
+    if (userChoice === "lizard") {
+      if (computerChoice === "spock") {
+        return "You win!";
     } else {
       return "You lose!";
     }
   }
-  if (userChoice === "paper") {
-    if (computerChoice === "rock") {
-      return "You win!";
-    } else {
-      return "You lose!";
-    }
-  }
-  if (userChoice === "scissors") {
-    if (computerChoice === "paper") {
-      return "You win!";
-    } else {
-      return "You lose!";
-    }
-  }
-}
-
-  if (userChoice === "bomb") {
-    return "You win!";
-  }
- }
-
-  if (userChoice === "lizard") {
-    if (userChoice === "spock" || computerChoice === "rock")
-      return = "You win!";
-    } else {
-      return = "Computer win";
-    }
-  }
-}
-
   if (userChoice === "spock") {
-    if (userChoice === "rock" || comupterChoice === "paper")
-      return = "You win!";
-    } else {
-      return = "Computer win!";
-    }
+    if (comupterChoice === "rock") {
+      return "You win!";
+  } else {
+    return "You lose!";
   }
-}
+  }
+  if (userChoice === "bomb") {
+    return "BOMB YOU WIN!";
+  }
+  }
 
-function playGame() {
-  var userChoice = getUserChoice();
-  var computerChoice = getComputerChoice();
+  function playGame() {
+    var userChoice = getUserChoice();
+    var computerChoice = getComputerChoice();
 
-  document.write(userChoice);
+    document.write(userChoice);
 
-  document.write(determineWinner(userChoice, computerChoice));
+    document.write(determineWinner(userChoice, computerChoice));
 
-}
+  }
 
 
-playGame();
+  playGame();
+
+</script>
