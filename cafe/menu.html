@@ -1,1 +1,270 @@
+<DOCTYPE html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: teal;
+   
+}
+.menu li:hover {
+    background-color: brown;
+}
+.menu li a {
+ text-decoration:none;
+ color:brown;
+ } 
+ 
+    
+img {
+width:50%;
+height:40%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color:white;
+}
+.active {
+    background-color:gray;
+}
+p.groove {
+ border-style: groove;
+ background-color:brown;
+ padding:20px;
+ font-size:60px;
+ letter-spacing: 5px;
+ font-family:monospace;
+}
+ 
+#beverages, #bakery, #breakfast {
+ border-left: 6px solid black;
+    background-color: brown;
+     font-size:30;
+    }
+   
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    font-weight:100;
+}
+th {
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+}   
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+.image {
+padding:5px;
+}
 
+</style>
+</head>
+
+
+
+
+<body style="background-color:lightgrey;">
+<center>
+<ul>
+  <li><a class="active" href="https://grayat.github.io/restaurant/main.html">HOME</a></li>
+  <li><a href="https://grayat.github.io/restaurant/menu.html">MENU</a></li>
+  <li><a href="https://grayat.github.io/restaurant/locations.html">LOCATION</a></li>
+  
+</ul>
+
+
+
+
+
+
+
+<p class="groove">MENUS<img src="https://i.pinimg.com/736x/5a/21/dc/5a21dc73c8511918fa55832c0ef64d59--coffee-shop-logo-coffee-shops.jpg" alt="logo" style="float:right;width:72px;height:65px;"></p>
+
+
+
+
+<p id="beverages">BEVERAGES</p>
+<table style="width:100%">
+
+<tr>
+<th>Item</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Freshly Brewed Coffee</td>
+<td>$1.85</td>
+</tr>
+
+<tr>
+<td>Latte</td>
+<td>$3.75</td>
+</tr>
+
+<tr>
+<td>Frappuccino</td>
+<td>$4.25</td>
+</tr>
+
+<tr>
+<td>Hot Chocolate</td>
+<td>$3.00</td>
+</tr>
+
+<tr>
+<td>Refreshments</td>
+<td>$2.75</td>
+</tr>
+
+<tr>
+<td>Bottled Water</td>
+<td>1.50</td>
+</tr>
+
+
+</table>
+
+
+
+
+<p id="breakfast">BREAKFAST</p>
+<table style="width:100%">
+
+<tr>
+ <th>Item</th>
+ <th>Price</th>
+ </tr>
+
+
+<tr>
+<td>Bacon, Egg and Cheese Sandwich</td>
+<td>$3.00</td>
+
+</tr>
+ 
+ 
+<tr>
+<td>Spinach and Feta Wrap</td>
+<td>$2.75</td>
+
+</tr>
+
+<tr>
+<td>Oatmeal</td>
+<td>$3.75</td>
+</tr>
+ 
+<tr>
+<td>Mediterranean Breakfast Bagel</td>
+<td>$4.00</td>
+</tr>
+
+</table>
+
+
+<p id="bakery">BAKERY</p>
+<table style="width:100%">
+<tr>
+<th>Item</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Pound Cake (lemon, banana, pumpkin)</td>
+<td>$2.00 (a slice)</td>
+</tr>
+
+<tr>
+<td>Muffin (chocolate chip, banana, carrot)</td>
+<td>$2.25</td>
+</tr>
+
+<tr>
+<td>Butter Croissant</td>
+<td>$2.75</td>
+</tr>
+
+<tr>
+<td>Chocolate Chip Cookie</td>
+<td>$1.25 (each)</td>
+</tr>
+</table>
+
+
+
+<img src="http://cdn.cnn.com/cnnnext/dam/assets/150929101049-black-coffee-stock-super-tease.jpg" class="image">
+
+
+
+<div class="footer">
+  <p>Contact us @ 604-242-4697</p>
+ </div>
+  
+
+
+
+
+
+</center>
+</body>
+</html>
