@@ -1,21 +1,24 @@
-function getSleepHours(day){
+function getSleepHours(day) {
   var hours = prompt("How many hours of sleep did you get each night this week/day?");
-   return number (hours);
+  return number(hours);
 }
-function getActualSleepHours () {
-var result = getSleepHours("Sunday") + getSleepHours("Monday") + getSleepHours("Tuesday") + getSleepHours("Wednesday") + geSleepHours("Thursday") + getSleepHours("Friday") + getSleepHours("Saturday");
-return result;
+
+function getActualSleepHours() {
+  var result = getSleepHours("Sunday") + getSleepHours("Monday") + getSleepHours("Tuesday") + getSleepHours("Wednesday") + geSleepHours("Thursday") + getSleepHours("Friday") + getSleepHours("Saturday");
+  return result;
 }
-function calculateSleepDebt(sleepHours){
-var actualSleepHours = getActualSleepHours();
-var idealSleepHours = getIdealSleepHours();
-if (actualSleepHours === idealSleepHours) {
-  document.write("You slept the exact amount of hours you wanted to!");
-} else if (actualSleepHours > idealSleepHours) {
-  sleepHours = actualSleepHours - idealSleepHours;
-  document.write(sleepHours + "hours more than you wanted to, you should sleep less.");
-} else if (actualSleepHours < idealSleepHours) {
-  sleepHours = idealSleepHours - actualSleepHours;
-  document.write(sleepHours + " hours less than you wanted to, you should get some more sleep")
+
+function calculateSleepDebt(sleepHours) {
+  var actualSleepHours = getActualSleepHours();
+  var idealSleepHours = getIdealSleepHours();
+  if (actualSleepHours === idealSleepHours) {
+    document.write("You slept the exact amount of hours you wanted to!");
+  } else if (actualSleepHours > idealSleepHours) {
+    sleepHours = actualSleepHours - idealSleepHours;
+    document.write(sleepHours + "hours more than you wanted to, you should sleep less.");
+  } else if (actualSleepHours < idealSleepHours) {
+    sleepHours = idealSleepHours - actualSleepHours;
+    document.write(sleepHours + " hours less than you wanted to, you should get some more sleep")
+  }
 }
-}
+calculateSleepDebt();
