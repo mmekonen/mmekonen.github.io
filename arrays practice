@@ -12,8 +12,8 @@ for (var i = 0; i < myPlaces.length; i++) {
 }
 
 
-cards = ["Diamond", "Spade", "Heart", "Club"];
-currentCard = ["Heart"];
+var cards = ["Diamond", "Spade", "Heart", "Club"];
+var currentCard = ["Heart"];
 
 while (currentCard !== "Spade") {
   document.write(currentCard + "<br>");
