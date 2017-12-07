@@ -1,0 +1,25 @@
+var myPlaces = [" Greece", " London", " Jamaica"];
+var friendsPlaces = [" Greece", " Hawaii", "Spain"];
+
+for (var i = 0; i < myPlaces.length; i++) {
+
+  for (var j = 0; j < friendsPlaces.length; j++) {
+
+    if (myPlaces[i] === friendsPlaces[j]) {
+      document.write("Match" + myPlaces[i]);
+    }
+  }
+}
+
+
+cards = ["Diamond", "Spade", "Heart", "Club"];
+currentCard = ["Heart"];
+
+while (currentCard !== "Spade") {
+  document.write(currentCard + "<br>");
+
+  var randomNumber = Math.floor(Math.random() * 4);
+
+  currentCard = cards[randomNumber];
+}
+document.write("I found a Spade");
