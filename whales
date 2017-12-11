@@ -1,0 +1,20 @@
+var input = prompt("I love dogs");
+    var vowels = ["a", "e", "i", "o", "u"];
+    var resultArray = [];
+
+    for (var i = 0; i < input.length; i++) {
+      for (var j = 0; j < vowels.length; j++) {
+        if (input[i] === vowels[j]) {
+          resultArray.push(input[i])
+
+          if (input[i] === "e") {
+            resultArray.push(input[i])
+
+          } else if (input[i] === "u") {
+            resultArray.push(input[i] + "u")
+          }
+        }
+      }
+    }
+
+    document.write(resultArray.join('').toUpperCase());
