@@ -16,4 +16,35 @@ switch (ask user) {
   break;
 }
 
-if (askUser === "yes")
+askUser=pompt ("Are you all packed and ready to go?");
+
+if (askUser === "yes") {
+alert("Excellent!")
+} else if (askUser === "no") {
+alert("You better get all your things, you don't want to be late for this special event!")
+}
+
+alert("There are five of you going to Vancouver for a special event and you have to make it there on time.");
+
+askUser=prompt("You have the choice to take one car or two cars. What's your choice? Note: The driver will have to pick up everyone and you guys can’t be late to the event.");
+
+if (askUser === "one car") {
+alert("Good luck, drive safe!");
+} else if (askUser === "two cars") {
+alert("Let's see it this is a smart choice.")
+}
+
+alert("The car you are in is just you and one other friend. You friend is trying to get to Vancouver on time, if not earlier.")
+
+askUser=prompt("Do you prefer for him to drive safe and take your guys time or drive faster without making any stops?")
+
+if (askUser === "drive safe") {
+alert("Great! You will not get a speeding ticket");
+} else if (askUser === "drive faster") {
+alert("NOt a smart choice. Game Over. PLEASE REFRESH PAGE!");
+throw new Error();
+}
+
+alert("You and your friend are 30min away from the Peace Arch border. Good Job!");
+
+askUser=prompt("You have made it more than halfway to your destination")
