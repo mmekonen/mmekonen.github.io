@@ -6,11 +6,9 @@ switch (ask user) {
   case "yes"
   alert("Great! Continue on the road trip");
   break;
-  
   case "no"
   alert("Oh no! No vacation for you.");
   break;
-  
   default
   alert("Oops! your suggestion cannot be identified");
   break;
@@ -21,7 +19,7 @@ askUser=pompt ("Are you all packed and ready to go?");
 if (askUser === "yes") {
 alert("Excellent!")
 } else if (askUser === "no") {
-alert("You better get all your things, you don't want to be late for this special event!")
+alert("You better get all your things, you don't want to be late for this special event!");
 }
 
 alert("There are five of you going to Vancouver for a special event and you have to make it there on time.");
@@ -31,12 +29,12 @@ askUser=prompt("You have the choice to take one car or two cars. What's your cho
 if (askUser === "one car") {
 alert("Good luck, drive safe!");
 } else if (askUser === "two cars") {
-alert("Let's see it this is a smart choice.")
+alert("Let's see it this is a smart choice.");
 }
 
-alert("The car you are in is just you and one other friend. You friend is trying to get to Vancouver on time, if not earlier.")
+alert("The car you are in is just you and one other friend. You friend is trying to get to Vancouver on time, if not earlier.");
 
-askUser=prompt("Do you prefer for him to drive safe and take your guys time or drive faster without making any stops?")
+askUser=prompt("Do you prefer for him to drive safe and take your guys time or drive faster without making any stops?");
 
 if (askUser === "drive safe") {
 alert("Great! You will not get a speeding ticket");
@@ -47,4 +45,24 @@ throw new Error();
 
 alert("You and your friend are 30min away from the Peace Arch border. Good Job!");
 
-askUser=prompt("You have made it more than halfway to your destination")
+askUser=prompt("You have made it more than halfway to your destination but, you don't know where the other half of your group is. Are you going to keep on driving or stop somewhere and wait for them?");
+
+if (askUser === "keep on driving") {
+alert("Snake move, but smart!");
+} else if(askUser === "wait for them") { 
+alert("You are risking your chance on getting to Vancouver on time, keep on going and see how you do.");
+}
+
+alert("Suddenly your friend starts to get really hungry and wants to get food since you are ahead of your friends already.");
+
+askUser=prompt("Are you going to get food or keep on driving?");
+
+if (askUser === "get food") {
+alert("How generous, but don't take too long!");
+} else if(askUser === "keep on driving") {
+alert("Woooow! what a nice friend you are.");
+}
+
+
+
+
